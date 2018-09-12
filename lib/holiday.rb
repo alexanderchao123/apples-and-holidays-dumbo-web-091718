@@ -34,10 +34,9 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def format(holiday)
-  formatted = []
   holiday_words = holiday.to_s().split("_")
-  holiday_words.each {|word| formatted << word.capitalize}
-  return formatted.join(" ")
+  holiday_words.each {|word| formatted << word.capitalize}.join(" ")
+  return
 end
 
 def all_holidays_with_bbq(holiday_hash)
