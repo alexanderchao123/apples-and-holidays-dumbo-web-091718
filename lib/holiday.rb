@@ -35,7 +35,7 @@ end
 
 def format(holiday)
   formatted = []
-  holiday.split("_").each {|word| formatted << word.capitalize}
+  holiday.to_s().split("_").each {|word| formatted << word.capitalize}
   return formatted.join(" ")
 end
 
