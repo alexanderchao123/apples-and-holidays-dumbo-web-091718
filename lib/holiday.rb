@@ -36,7 +36,6 @@ end
 def format(holiday)
   holiday_words = holiday.to_s().split("_")
   holiday_words.each {|word| word.capitalize()}.join(" ")
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
